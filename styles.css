@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+body {
+    background: url("images/background.jpg");
+}
+
+.flexbox {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 20rem;
+}
+
+a {
+    transition: all .7s ease-in-out;
+}
+a:hover {
+    transform: scale(1.2);
+}
+h1, h2 {
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 1.25px 1.25px aqua;
+}
+

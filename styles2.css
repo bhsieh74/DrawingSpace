@@ -1,0 +1,16 @@
+
+body {
+    background: url('images/background3.jpg');
+    background-size: 2000px 1000px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.move {
+    position: absolute;
+}
+
+#comet {
+    top: 0;
+    right: 0;
+}
