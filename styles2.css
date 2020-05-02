@@ -14,3 +14,19 @@ body {
     top: 0;
     right: 0;
 }
+
+#ufo {
+    bottom: 0;
+}
+
+#asteroid {
+    margin-top: 5rem;
+}
+
+#asteroid2 {
+    margin-top: 30rem;
+    right: 0;
+}
+#astronaut {
+    z-index: 2;
+}

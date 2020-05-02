@@ -23,6 +23,10 @@ let asteroidrotate = 0;
 let spaceshiphorizontal = -300;
 let spaceshipvertical = 100;
 
+let asteroid2horizontal = -200;
+let asteroid2vertical = 100;
+let asteroid2rotate = 0;
+
 let animation = requestAnimationFrame(float);
 
 const objects = document.querySelectorAll('.move');
@@ -115,6 +119,16 @@ animation = requestAnimationFrame(float);
     if (spaceshipvertical < 1000) {
         spaceshipvertical += .2;
         objects[5].style.top = spaceshipvertical + 'px';
+    }
+
+    if (asteroid2horizontal < 2000) {
+        asteroid2horizontal += 1; 
+        objects[6].style.right = asteroid2horizontal + 'px';
+        objects[6].style.transform = "rotateZ(" + asteroid2rotate + "deg)";
+        asteroid2rotate = asteroid2rotate + .28;
+    }
+    else {
+        asteroid2horizontal = -100;
     }
  
 }   
