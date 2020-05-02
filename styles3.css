@@ -1,0 +1,118 @@
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+body {
+    margin: auto;
+    height: auto;
+    background: url("images/background3.jpg");
+    overflow: hidden;
+}
+#scene {
+    margin: auto;
+    padding-top: 10rem;
+    width: 600px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+    perspective-origin: center top;
+}
+
+#scene > img {
+    width: 800px;
+    height: 800px;
+    position: fixed;
+    margin-left: -80px;
+    margin-top: -50px;
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.slideshow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 10s;
+    animation-name: spin;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.slideshowchild {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slideshowchild:nth-child(1) { 
+    transform: rotateY(60deg) translateZ(700px);
+    background: rbga(0, 0, 0, 0);
+
+}
+
+.slideshowchild:nth-child(2) {
+    transform: rotateY(120deg) translateZ(700px);
+    background: rbga(0, 0, 0, 0);
+
+}
+
+.slideshowchild:nth-child(3) {
+    transform: rotateY(180deg) translateZ(700px);
+    background: rbga(0, 0, 0, 0);
+
+}
+
+.slideshowchild:nth-child(4) {
+    transform: rotateY(240deg) translateZ(700px);
+    background: rbga(0, 0, 0, 0);
+
+}
+
+.slideshowchild:nth-child(5) {
+    transform: rotateY(300deg) translateZ(700px);
+    background: rbga(0, 0, 0, 0);
+
+}
+
+.slideshowchild:nth-child(6) {
+    transform: rotateY(360deg) translateZ(700px);
+    background: rbga(0, 0, 0, 0);
+
+}
+.slideshowchild:nth-child(7) {
+    background: rbga(0, 0, 0, 0);
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+
+}
+
+img {
+    display: block;
+
+}
+
