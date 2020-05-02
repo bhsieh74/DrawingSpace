@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 
+
 body {
     background: url("images/background.jpg");
 }
@@ -16,6 +17,7 @@ a {
 }
 a:hover {
     transform: scale(1.4);
+
 }
 h1, h2 {
     margin-top: 10rem;
@@ -23,6 +25,14 @@ h1, h2 {
     text-align: center;
     color: white;
     font-family: 'Orbitron', sans-serif;
-    text-shadow: 1.25px 1.25px aqua;
+    text-shadow: 2.3px 2.3px cyan;
 }
 
+video {
+    mix-blend-mode: multiply;
+    z-index: -1;
+    min-width: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
